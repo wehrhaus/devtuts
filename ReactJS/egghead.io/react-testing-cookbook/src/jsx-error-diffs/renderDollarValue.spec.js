@@ -1,3 +1,7 @@
+/**
+ * Use the expect-jsx library to diff JSX results
+ */
+
 import React from 'react';
 import RenderDollarValue from './renderDollarValue';
 import TestUtils from 'react-addons-test-utils';
