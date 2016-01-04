@@ -1,0 +1,25 @@
+{
+  "name": "react-testing-cookbook",
+  "version": "1.0.0",
+  "description": "Egghead.io's React Testing Cookbook by Trevor D. Miller : https://egghead.io/series/react-testing-cookbook",
+  "main": "''",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wehrhaus/devtuts.git"
+  },
+  "keywords": [
+    "ReactJS",
+    "Mocha",
+    "Expect",
+    "TDD"
+  ],
+  "author": "Justin Wehrman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wehrhaus/devtuts/issues"
+  },
+  "homepage": "https://github.com/wehrhaus/devtuts#readme"
+}
