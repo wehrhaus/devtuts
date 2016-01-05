@@ -30,6 +30,14 @@ describe('store', () => {
             {
                 type: 'REMOVE_QUOTE_BY_ID',
                 payload: { id: 1 }
+            },
+            {
+                type: 'LIKE_QUOTE_BY_ID',
+                payload: { id: 2 }
+            },
+            {
+                type: 'LIKE_QUOTE_BY_ID',
+                payload: { id: 2 }
             }
         ];
 
@@ -42,7 +50,7 @@ describe('store', () => {
                     text: 'Some other text',
                     author: 'Some other author',
                     id: 2,
-                    likeCount: 0
+                    likeCount: 2
                 }
             ]
         };
