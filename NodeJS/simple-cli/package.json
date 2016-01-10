@@ -1,0 +1,27 @@
+{
+  "name": "command-line-file-search",
+  "version": "0.0.1",
+  "description": "Convuled version of `ls -a | grep STRING`",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wehrhaus/devtuts.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "cli",
+    "bin"
+  ],
+  "author": "Justin Wehrman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wehrhaus/devtuts/issues"
+  },
+  "homepage": "https://github.com/wehrhaus/devtuts#readme",
+  "preferGlobal": true,
+  "bin": {
+    "filesearch": "fileSearch.js"
+  }
+}
