@@ -35,7 +35,11 @@ board.on('ready', () => {
             task: () => wheels.softRight()
         },
         {
-            delay: 3000,
+            delay: 5000,
+            task: () => wheels.wheelsForward()
+        },
+        {
+            delay: 2000,
             task: () => wheels.resetWheels()
         },
         {

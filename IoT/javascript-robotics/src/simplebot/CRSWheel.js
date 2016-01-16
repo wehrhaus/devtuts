@@ -1,9 +1,5 @@
 /* eslint-disable no-console, strict */
 
-/**
- * CRSWheel.js
- *
- */
 'use strict';
 
 class CRSWheel {
@@ -11,7 +7,7 @@ class CRSWheel {
     constructor(opts) {
 
         if (!opts.johnnyFive) {
-            throw new Error('CRSWheel (name: ' + opts.name + ') REQUIRES an instance of `Johnny-Five to be passed as the first argument.');
+            throw new Error('CRSWheel (name: ' + opts.name + ') REQUIRES an instance of `Johnny-Five` to be passed as the first argument.');
         }
 
         const _DEFAULTS = {
