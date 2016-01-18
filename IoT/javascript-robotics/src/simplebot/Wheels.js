@@ -22,12 +22,12 @@ module.exports = (five) => {
 
     return {
 
-        wheelsForward: () => {
+        forward: () => {
             rightWheel.forward();
             leftWheel.forward();
         },
 
-        wheelsReverse: () => {
+        reverse: () => {
             rightWheel.reverse();
             leftWheel.reverse();
         },
@@ -52,12 +52,12 @@ module.exports = (five) => {
             leftWheel.forward();
         },
 
-        stopWheels: () => {
+        stop: () => {
             rightWheel.stop();
             leftWheel.stop();
         },
 
-        resetWheels: () => {
+        reset: () => {
             rightWheel.to(87);
             leftWheel.to(90);
         }

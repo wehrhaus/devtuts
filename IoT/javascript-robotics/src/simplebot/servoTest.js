@@ -12,11 +12,11 @@ board.on('ready', () => {
     temporal.queue([
         {
             delay: 500,
-            task: () => wheels.wheelsForward()
+            task: () => wheels.forward()
         },
         {
             delay: 2000,
-            task: () => wheels.wheelsReverse()
+            task: () => wheels.reverse()
         },
         {
             delay: 2000,
@@ -36,11 +36,11 @@ board.on('ready', () => {
         },
         {
             delay: 5000,
-            task: () => wheels.wheelsForward()
+            task: () => wheels.forward()
         },
         {
             delay: 2000,
-            task: () => wheels.resetWheels()
+            task: () => wheels.reset()
         },
         {
             delay: 500,
