@@ -1,5 +1,5 @@
-module.exports = function(ngModule) {
-    ngModule.directive('kcdHello', function() {
+export default ngModule => {
+    ngModule.directive('kcdHello', () => {
         return {
             restrict: 'E',
             scope: {},
@@ -8,7 +8,7 @@ module.exports = function(ngModule) {
             controller: function() {
                 var vm = this;
 
-                vm.greeting = 'Hello Webpack!';
+                vm.greeting = 'Hello Webpack!!!';
             }
         }
     });

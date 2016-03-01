@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":"AAAA,OAAO,OAAP,GAAiB,UAAS,QAAT,EAAmB;AAChC,YAAQ,aAAR,EAAuB,QAAvB,EADgC;CAAnB","file":"index-compiled.js","sourcesContent":["module.exports = function(ngModule) {\n    require('./kcd-hello')(ngModule);\n};\n"]}

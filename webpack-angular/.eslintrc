@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "comma-dangle": [2, "never"],
+        "func-names": 0,
+        "indent": [2, 4],
+        "no-console": 0,
+        "padded-blocks": 0,
+        "quotes": [2, "single"],
+        "strict": [2, "function"]
+    },
+    "extends": "airbnb"
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":"AAAA,IAAI,UAAU,QAAQ,SAAR,CAAV;AACJ,IAAI,WAAW,QAAQ,MAAR,CAAe,KAAf,EAAsB,EAAtB,CAAX;;AAEJ,QAAQ,cAAR,EAAwB,QAAxB","file":"index-compiled.js","sourcesContent":["var angular = require('angular');\nvar ngModule = angular.module('app', []);\n\nrequire('./directives')(ngModule);\n"]}
