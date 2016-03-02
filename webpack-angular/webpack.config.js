@@ -6,6 +6,8 @@ module.exports = {
         filename: 'bundle.js'
     },
 
+    devtool: 'source-map',
+
     module: {
         loaders: [
             {
@@ -19,6 +21,16 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: 'raw',
+                exclude: /(node_modules)/
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css',
+                exclude: /(node_modules)/
+            },
+            {
+                test: /\.scss$/,
+                loader: 'style!css?sourceMap!sass?sourceMap',
                 exclude: /(node_modules)/
             }
         ]
