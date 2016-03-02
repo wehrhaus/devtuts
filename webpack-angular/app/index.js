@@ -1,4 +1,6 @@
-var angular = require('angular');
-var ngModule = angular.module('app', []);
+import angular from 'angular';
+import registerDirectives from './directives';
 
-require('./directives').default(ngModule);
+const ngModule = angular.module('app', []);
+
+registerDirectives(ngModule);

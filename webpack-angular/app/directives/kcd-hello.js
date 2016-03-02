@@ -3,12 +3,12 @@ export default ngModule => {
         return {
             restrict: 'E',
             scope: {},
-            templateUrl: 'directives/kcd-hello.html',
+            template: require('./kcd-hello.html'),
             controllerAs: 'vm',
             controller: function() {
-                var vm = this;
+                const vm = this;
 
-                vm.greeting = 'Hello Webpack!!!';
+                vm.greeting = 'Hello Webpack!';
             }
         }
     });
