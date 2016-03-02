@@ -30617,7 +30617,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".kcd-hello {\n  color: blue; }\n", "", {"version":3,"sources":["/./directives/directives/kcd-hello.scss"],"names":[],"mappings":"AACA;EACI,YAFQ,EAGX","file":"kcd-hello.scss","sourcesContent":["$hello: blue;\n.kcd-hello {\n    color: $hello;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".kcd-hello {\n  color: blue; }\n", "", {"version":3,"sources":["/./app/directives/kcd-hello.scss"],"names":[],"mappings":"AACA;EACI,YAFQ,EAGX","file":"kcd-hello.scss","sourcesContent":["$hello: blue;\n.kcd-hello {\n    color: $hello;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 

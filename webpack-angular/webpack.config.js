@@ -1,10 +1,18 @@
-module.exports = {
+var webpack = require('webpack');
+
+var config = {
     context: __dirname + '/app',
     entry: './index.js',
     output: {
         path: __dirname + '/app',
         filename: 'bundle.js'
     },
+
+    plugins: [
+        new webpack.DefinePlugin({
+            ON_TEST: process.env.NODE_ENV === 'test'
+        })
+    ],
 
     devtool: 'source-map',
 
@@ -37,3 +45,9 @@ module.exports = {
     }
 
 };
+
+if (process.env.NODE_ENV === 'production') {
+    config.output.path = __dirname + '/dist';
+}
+
+module.exports = config;
