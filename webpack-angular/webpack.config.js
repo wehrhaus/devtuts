@@ -14,17 +14,12 @@ var config = {
         })
     ],
 
-    devtool: 'source-map',
-
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                loader: 'babel',
-                query: {
-                    presets: ['es2015']
-                }
+                loader: 'ng-annotate!babel'
             },
             {
                 test: /\.html$/,
@@ -48,6 +43,8 @@ var config = {
 
 if (process.env.NODE_ENV === 'production') {
     config.output.path = __dirname + '/dist';
+    config.plugins.push(new webpack.optimize.UglifyJsPlugin());
+    config.devtool = 'source-map';
 }
 
 module.exports = config;

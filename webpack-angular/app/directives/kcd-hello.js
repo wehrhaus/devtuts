@@ -5,7 +5,7 @@ export default ngModule => {
         kcdHelloTest(ngModule);
     }
 
-    ngModule.directive('kcdHello', () => {
+    ngModule.directive('kcdHello', ($log) => {
         require('./kcd-hello.scss');
         return {
             restrict: 'E',
@@ -16,6 +16,7 @@ export default ngModule => {
                 const vm = this;
 
                 vm.greeting = 'Hello Webpack!';
+                $log.info('info check');
             }
         }
     });
